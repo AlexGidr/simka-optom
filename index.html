@@ -9,23 +9,21 @@
   <meta name="generator" content="Hugo 0.83.1">
   <link href="pricing.css" rel="stylesheet">
   <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./php/send.php">
   <title>simkarta-optom</title>>
 
 </head>
 
 <body>
-
   <div class="container py-3">
     <header>
       <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+        <a href="https://wa.me/79662713333" class="d-flex align-items-center text-dark text-decoration-none">
           <span class="fs-4"><strong>Симкарты Химки</strong></span>
         </a>
-
         <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
           <a class="me-3 py-2 text-dark text-decoration-none" href="#operator">Операторы</a>
-          <a class="me-3 py-2 text-dark text-decoration-none" href="#price">Прайс</a>
-          <a class="me-3 py-2 text-dark text-decoration-none" href="#support">Поддержка</a>
+          <a class="me-3 py-2 text-dark text-decoration-none" href="#support">Заявка</a>
           <a class="py-2 text-dark text-decoration-none" href="#contact">Контакты</a>
         </nav>
       </div>
@@ -53,7 +51,7 @@
                   <li>Баланс: В наличии сим-карты без Баланса и с Балансом 30р.</li>
                   <li>от 60 руб.</li>
                 </ul>
-                <button type="button" class="w-50 btn btn-lg btn-outline-primary">Заказать</button>
+                <a href="https://wa.me/79662713333" class="w-50 btn btn-lg btn-outline-primary">Заказать</a>
               </div>
             </div>
           </div>
@@ -71,7 +69,7 @@
                   <li>Баланс: В наличии сим-карты без Баланса и с Балансом 30р.</li>
                   <li>от 60 руб.</li>
                 </ul>
-                <button type="button" class="w-50 btn btn-lg btn-outline-primary">Заказать</button>
+                <a href="https://wa.me/79662713333" class="w-50 btn btn-lg btn-outline-primary">Заказать</a>
               </div>
             </div>
           </div>
@@ -89,7 +87,7 @@
                   <li>Баланс: В наличии сим-карты без Баланса и с Балансом 30р.</li>
                   <li>от 60 руб.</li>
                 </ul>
-                <button type="button" class="w-50 btn btn-lg btn-outline-primary">Заказать</button>
+                <a href="https://wa.me/79662713333" class="w-50 btn btn-lg btn-outline-primary">Заказать</a>
               </div>
             </div>
           </div>
@@ -152,28 +150,34 @@
           </div>
         </div>
       </section>
-      
+     
     </main>
 
     <footer class="pt-4 my-md-5 pt-md-5 border-top">
       <div class="row text-center">
-        <div class="col-12 col-md">
-          <h3 id="contact">КОНТАКТЫ</h3>
+        <div class="col-6 col-md">
+          <div class="contacts">
+            <h3 id="contact">КОНТАКТЫ</h3>
             <p class="fw-bold">Связаться с продавцом:</p>
             <p>+ 7 (966) 271-33-33</p>
             <p class="fw-bold">Адреса</p>
             <p>г Химки, Юбилейный проспект, 36</p>
             <p class="fw-bold">График работы:</p>
             <p>Пн-сб 10:00-21:00</p>
+          </div>
         </div>
-
-        </ul>
+        <div class="col-6 col-md">
+          <div class="row text-center ">
+            <form action="php/send.php" method="post" class="row w-50 form-object  ">
+              <h3 class="mb-3">Отправить заявку:</h3>
+              <input type="text" placeholder="7(999)777-88-77" name="tel" required><br>
+              <input class="mb-3 mt-3" type="submit" value="Отправить">
+            </form>
+          </div>
+        </div>
       </div>
+    </footer>
   </div>
-  </footer>
-  </div>
-
-
 
 </body>
 
