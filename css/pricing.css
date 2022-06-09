@@ -31,3 +31,20 @@ body {
 .pricing-header {
   max-width: 700px;
 }
+.footer {
+  background: #061D25;
+  padding: 10px 0;
+}
+.footer a {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-right: 1px solid #70726F;
+  transition: all .5s ease;
+}
+.footer a:first-child {
+  border-left: 1px solid #70726F;
+}
+.footer a:hover {
+  color: white;
+}
